@@ -1,0 +1,644 @@
+@import url("../css/normalize.css");
+@font-face {
+font-family: "Aller Light";
+src: url("../fonts/Aller_Lt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Aller Regular";
+    src: url("../fonts/Aller_Rg.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Aller Display";
+    src: url("../fonts/AllerDisplay.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Aller Italic";
+    src: url("../fonts/Aller_LtIt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix::after,
+.header::after,
+.grid::after,
+.item::after,
+.footer::after,
+.circle::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: .87rem;
+    font-weight: 400;
+    color: #181818;
+    line-height: 1.58;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+.page__cell {
+    max-width: 1213px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+/*<!--левый заголовок меню-->*/
+.menu{
+    list-style: none;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.menu--word{
+    font-family: "Aller Regular";
+    font-size: .95rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #181818;
+}
+.menu--word:hover {
+    /*border: 1px;*/
+    background: #dd1522;
+    color: #FFFFFF;
+    padding: 1rem 0.5rem;
+    margin: -.5rem;
+
+}
+.left{
+    float: left;
+    width: 34%;
+    margin-right: 7.8%;
+}
+/*<!--лого заголовок центр-->*/
+.center{
+    float: left;
+    width: 18.1%;
+}
+.logo__img{
+    max-width: 100%;
+}
+/*<!--правый заголовок поиск-->*/
+.right{
+    float: right;
+    width: 40%;
+}
+input, button, textarea:focus{
+    outline: 0;
+}
+.search{
+    background-color: #bebebe;
+    /*width: 16.125rem;*/
+    height: 1.875rem;
+    border-radius: 1.875rem;
+    position: relative;
+    /*transform: translate(-50%,-50%);*/
+    padding: 0 0.5rem;
+}
+.search-button{
+    color: #5a5a5a;
+    background-color: #bebebe;
+    height:1.8rem;
+    width:1.5rem;
+    float: right;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Aller Italic;
+    color: #818181;
+    float: left;
+    padding:0;
+    line-height: 1.875rem;
+    width: 13.31rem;
+}
+.right__icon{
+    float: right;
+    padding: 0.625rem 0;
+}
+.social{
+    margin-top: 0.44rem;
+    padding-right: 1.25rem;
+}
+/*<!--слайдер-->*/
+.slider__item{
+    padding-top: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -5;
+}
+.slider{
+    position: absolute;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 3.15rem;
+    width: 100%;
+    z-index:-5;
+}
+/*<!--donate-->*/
+.donate{
+    padding-top: 9%;
+    width: 38.5%;
+}
+.donate-picture{
+    max-width: 100%;
+    /*margin-top: 1.5rem;*/
+}
+.donate__bottom{
+    width: 9.68rem;
+    margin: 6% auto 0/*33.12%*/ auto;
+}
+.donate__link {
+    background-image: url("../img/back_link_red.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 9.69rem;
+    height: 2.375rem;
+}
+.link__red{
+    display: block;
+    font-family: "Aller Light";
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.4rem 0 0.4rem 0.9rem;
+}
+.link__red:hover{
+    background-color: rgba(0,0,0, 0.1);
+}
+/*<!верхняя плитка>*/
+.grid {
+    margin-top: 12.7%;
+}
+.grid__item{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+.grid__overlay{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+}
+.grid__picture{
+    max-width: 100%;
+    display: block;
+}
+.grid__head{
+    font-family: "Aller Display";
+    font-size: 1.27rem;
+}
+.grid__head,
+.grid__text{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top:50%;
+}
+.grid__overlay:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+/*<!--счетчик-->*/
+.event__head{
+    font-family: "Aller Light";
+    font-size: 1.56rem;
+}
+.evnt__text{
+    font-family: "Aller Light";
+    font-size: 0.87rem;
+}
+.page__event{
+    float: left;
+    width: 50%;
+    margin-top: 3.06rem;
+}
+.page__counter{
+    float: right;
+    width: 50%;
+}
+.counter__block{
+    float: right;
+    width: 20.96%;
+    height: 8.6875rem;
+    margin-left: 2.68%;
+    margin-bottom: 3.125rem;
+    margin-top: 3.56rem;
+    position: relative;
+}
+.counter-picture{
+    width: 100%;
+}
+.counter_overlay{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+}
+.counter_number,
+.counter_text{
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    margin-top: 8%;
+}
+.counter_number{
+    font-size: 2.38rem;
+    font-weight: bold;
+}
+.counter_text{
+    font-family: "Aller Light";
+    font-size: 1.11rem;
+    margin-top: 13%;
+}
+.join__bottom{
+    margin-top: 1.3rem;
+}
+.join__link {
+    background-image: url("../img/back_link_green.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 7.94rem;
+    height: 2.375rem;
+}
+.link__green{
+    display: block;
+    font-family: "Aller Light";
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.4rem 0 0.4rem 0.9rem;
+}
+.link__green:hover{
+    background-color: rgba(0,0,0, 0.1);
+}
+.event__text {
+    font-family: "Aller Light";
+    font-size: 0.87rem;
+    margin-top: 1.3rem;
+}
+/*<!--волонтер+помощь-->*/
+.page__back{
+    background-color: #FFFFFF;
+}
+.page__help{
+    float: left;
+    width: 40%;
+    margin-top: 3.75rem;
+}
+.help--header{
+    font-family: "Aller Light";
+    font-size: 1.93rem;
+}
+.help--text{
+    font-family: "Aller Display";
+    font-size: 1rem;
+    color: red;
+    font-weight: 800;
+    margin-top: 1.1rem;
+    margin-bottom: 1.4rem;
+}
+.donate__picture{
+    margin-top: 1.5rem;
+}
+/*волонтре фото*/
+.volunteer{
+    float: right;
+    width: 55%;
+    margin-top: 2.12rem;
+    margin-bottom: 3rem;
+}
+.volunteer__block{
+    float:left;
+    border: solid 4px #efefef;
+    width: 54%;
+    height: auto;
+}
+.palm{
+    width: 2.87rem;
+    margin: 1.8rem auto 0 auto;
+}
+.volunteer--header{
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    font-family: "Aller Display";
+    font-size: 1.27rem;
+    color: #00b801;
+    text-align: center;
+}
+.volunterr--text{
+    text-align: center;
+}
+.join__bottom_volunteer{
+    width: 7.93rem;
+    margin: 1.9rem auto;
+}
+.volunteer__image{
+    float: right;
+    max-width: 40%;
+}
+.imagemen{
+    padding: auto 0;
+}
+/*портфолио заголовок*/
+.section{
+    max-width: 870px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.donate__bottom_port{
+    width: 9.68rem;
+    margin: 2.12rem auto 3.44rem auto;
+}
+.portfolio_header{
+    font-family: "Aller Light";
+    font-size: 1.85rem;
+    text-align: center;
+    font-weight: 400;
+    text-align: center;
+}
+.portfolio_text{
+    text-align: center;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+/*потфолио нави*/
+.nav__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nave__link{
+    font-family: "Aller Display";
+    font-size: 1rem;
+    color: #181818;
+    text-align: center;
+    text-decoration: none;
+}
+.nav__all{
+    width: 5.5rem;
+    height: 2.19rem;
+    background-color: #e5e5e5;
+}
+.p{
+    display: block;
+    position: relative;
+    margin: 0;
+    top:20%;
+}
+.nav__edu{
+    width: 8.93rem;
+    height: 2.19rem;
+    background-color: #e5e5e5;
+}
+.nav{
+    max-width: 551px;
+    margin: 0 auto;
+    padding-top: 2.6rem;
+    padding-bottom: 3rem;
+ }
+.nave__link:hover{
+    color: white;
+}
+.nav__all:hover,
+.nav__edu:hover{
+    background-color: #00b801;
+}
+.grid_img{
+    float: left;
+    width: 50%;
+}
+.page__couses{
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.video{
+    float: left;
+    width: 27.68%;
+    margin-right: 4.3%;
+    margin-bottom: 1.7rem;
+    position: relative;
+}
+.vide__image{
+    max-width: 100%;
+    display: block;
+}
+.video__header{
+    font-family: Aller;
+    font-size: 1.12rem;
+    font-weight: 900;
+    margin-bottom: 1.1rem;
+}
+.video_blok{
+    width: 36%;
+    margin-right: 0;
+}
+.video__img{
+    float: left;
+    margin-right: 1.5rem;
+    margin-top: 4px;
+}
+h5{
+    margin: 0;
+}
+.video__item{
+    margin-bottom: 2rem;
+}
+/*navi*/
+.form{
+    max-width: 970px;
+    margin: 2.5rem auto 0 auto;
+}
+.input{
+    float: left;
+    margin-right: 2.37%;
+    margin-bottom: 14px;
+    border: solid 2px #e5e5e5;
+    background-color: #FFFFFF;
+    width: 48.76%;
+    height: 2.25rem;
+}
+.input_message{
+    border: none;
+    width: 95%;
+    font-style: italic;
+    padding-top: 0.4rem;
+    padding-left: 1.2rem;
+}
+.input:nth-of-type(2n){
+    margin-right: 0;
+}
+.textarea{
+    float: left;
+    width: 100%;
+    height: 5.5rem;
+    border: solid 2px #e5e5e5;
+    background-color: #FFFFFF;
+    margin-bottom: 1.68rem;
+}
+textarea{
+    width: 98%;
+    height: 100%;
+    border: none;
+    resize: none;
+    font-family: "Open Sans";
+    font-size: 0.84rem;
+    color: #181818;
+    font-style: italic;
+    font-weight: 400;
+    padding-top: 0.7rem;
+    padding-left: 1.2rem;
+}
+.submit{
+    display: block;
+    text-align: center;
+    background-image: url("../img/back_submit.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 7.43rem;
+    height: 2.37rem;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 2rem;
+    padding-top: 0;
+    font-family: "Aller Light";
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    margin-bottom: 3.81rem;
+}
+/*footer*/
+.footer{
+    background-color: #161616;
+}
+.footer__block{
+    padding-top: 2.5rem;
+    float: left;
+}
+.element1{
+    width: 25.5%;
+    margin-right: 5.03%;
+}
+.block__header{
+    font-family: "Aller Display";
+    font-size: 1.19rem;
+    color: #FFFFFF;
+    margin-bottom: 1.6rem;
+}
+.block__text,
+.phone{
+    color: #FFFFFF;
+    margin: 0;
+}
+.number,
+.phone{
+    display: inline-block;
+    margin: 0;
+}
+.contact{
+    margin-top: 1.62rem;
+}
+.element2{
+    width: 25%;
+    margin-right: 6.07%;
+}
+.text{
+    color: #00b801;
+    margin: 0.5rem;
+}
+.text_link{
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+.element3{
+    width: 10.5%;
+    margin-right: 6.5%;
+}
+.element4{
+    width: 21.4%;
+}
+.closed{
+    color: #00b801;
+    font-weight: bolder;
+}
+.footer_site{
+    text-align: center;
+    color: #FFFFFF;
+}
+.line{
+    margin: 0;
+}
+.btn-nav{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.btn-nav:focus {
+    outline: 0;
+}
+.btn-nav__line{
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #000000;
+    margin-bottom: 3px;
+}
+.btn-nav__line:last-child{
+    margin-bottom: 0;
+}
+.btn-nav:hover{
+    background-color: #df1622;
+}
+.menu__btn{
+    text-align: left;
+    margin: 0.45rem 0;
+    display: none;
+}
+.menu__responsit{
+    display: none;
+}

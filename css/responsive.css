@@ -1,0 +1,268 @@
+@media  screen and (max-width: 1027px){
+    html{
+        font-size: 93%;
+    }
+    .menu--word:hover{
+        margin: -0.45rem;
+    }
+    .imagemen{
+        margin-top: 10%;
+    }
+    .grid{
+        margin-top: 10%;
+    }
+}
+@media  screen and (max-width: 995px){
+    html{
+        font-size: 90%;
+        }
+    .menu--word:hover{
+        margin: -0.5rem;
+    }
+}
+@media  screen and (max-width: 962px){
+    .menu__btn,
+    .menu-open{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .menu--word{
+        width: 3.75rem;
+        margin: 0 0.5rem;
+        color: #FFFFFF;
+        display:inline;
+    }
+    .menu--word:hover{
+        background: #dd1522;
+        color: #FFFFFF;
+        margin: 0 0.5rem;
+        padding: 0.3rem 0;
+        cursor: default;
+        /*margin: -.5rem;*/
+        display: inline;
+    }
+    .search-text{
+        width: 0px;
+    }
+    .search:hover > .search-text{
+        width: 13.31rem;
+    }
+    .grid{
+        margin-top: 8%;
+    }
+    .counter_number{
+        margin-top: 0.5%;
+    }
+    .counter_text{
+        font-size: 1rem;
+    }
+}
+@media  screen and (max-width: 800px){
+    .grid__head{
+        font-size: 1.1rem;
+    }
+    .grid__text{
+        font-size: 0.8rem;
+    }
+    .counter_text{
+        margin-top: 6%;
+    }
+}
+@media  screen and (max-width: 720px){
+    html{
+        font-size: 85%;
+    }
+    .counter_number{
+        margin-top: 0;
+    }
+    .element3{
+        width: 13%;
+        margin-right: 4%;
+    }
+    .element2{
+        width: 29%;
+        margin-right: 4.07%;
+    }
+    .page__help{
+        float: none;
+        width: 80%;
+      }
+    .page__help{
+        margin: 0 auto;
+    }
+    .help--header,
+    .help--text,
+    .text{
+        text-align: center;
+    }
+    .donate__picture{
+        width: 9.68rem;
+        margin: 1.5rem auto 0 auto;
+    }
+    .volunteer{
+        float: none;
+        width: 42.87rem;
+        margin: 2.12rem auto 0 auto;
+    }
+    .donate-picture{
+        margin-top: 0;
+    }
+    .imagemen {
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    .page__event,
+    .page__counter{
+        float: none;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .event__head,
+    .event__text{
+        text-align: center;
+    }
+    .join__bottom{
+        width: 7.94rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .counter__block{
+        float: right;
+    }
+    .counter__block:first-child{
+        margin-right: 4.68%;
+    }
+    .grid__head{
+        font-size: 0.9rem;
+    }
+    .grid__text{
+        font-size: 0.6rem;
+    }
+}
+    @media  screen and (max-width: 620px) {
+    .grid__item {
+         width: 50%;
+         float: none;
+         margin-right: auto;
+         margin-left: auto;
+        }
+    .video_blok{
+        float: none;
+    }
+    .video{
+        width: 47%;
+    }
+    .video:nth-child(2){
+        margin-right: 0;
+    }
+    .video_blok{
+        display: none;
+    }
+        .grid__head{
+            font-size: 1.27rem;
+        }
+        .grid__text{
+            font-size: 0.88rem;
+        }
+    .grid{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid__item{
+        width: 49.5%;
+        display: inline-block;
+    }
+    .slider__item{
+        padding-top: 55%;
+    }
+    .textarea{
+        height: 8rem;
+    }
+    .element1{
+        width: 45%;
+        margin-right: 5%;
+    }
+    .element2{
+         width: 50%;
+        margin-right: 0;
+    }
+        .element3{
+            width: 50%;
+            margin-right: 0;
+        }
+        .element4{
+            width: 50%;
+            margin-right: 0;
+        }
+        .search:hover > .search-text{
+            width: 11.31rem;
+        }
+        .grid_img{
+            float: none;
+            width: 100%;
+        }
+}
+@media  screen and (max-width: 540px){
+    html{
+        font-size: 80%;
+    }
+    .volunteer{
+        width: 100%;
+    }
+    .volunteer__block{
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .volunteer__image{
+        float: none;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid__head{
+        font-size: 1.1rem;
+    }
+    .grid__text{
+        font-size: 0.8rem;
+    }
+    .counter_number{
+        font-size: 2rem;
+    }
+    .counter_text{
+        font-size: 1rem;
+    }
+    .search:hover > .search-text{
+        width: 8.5rem;
+    }
+    .nav__all{
+        width: 5rem;
+    }
+    .nav__edu{
+        width: 8rem;
+    }
+}
+@media  screen and (max-width: 400px) {
+    html {
+        font-size: 75%;
+    }
+    .grid__head{
+        font-size: 0.9rem;
+        top: 45%;
+    }
+    .grid__text{
+        font-size: 0.8rem;
+        top:45%;
+    }
+    .counter_number{
+        font-size: 1.8rem;
+    }
+    .counter_text{
+        font-size: 0.8rem;
+    }
+}
